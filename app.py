@@ -2,8 +2,9 @@ import streamlit as st
 import pandas as pd
 import geopandas as gpd
 import folium
-from shapely.geometry import Point
+from folium.plugins import HeatMap
 from streamlit_folium import st_folium
+
 
 st.set_page_config(layout="wide")
 
