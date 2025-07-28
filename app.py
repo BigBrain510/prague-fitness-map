@@ -28,7 +28,7 @@ selected_types = st.sidebar.multiselect(
 )
 
 districts = load_districts()
-district_names = ["All Prague"] + sorted(districts["name"].unique())
+st.write("District columns:", districts.columns)
 selected_district = st.sidebar.selectbox("Select Neighborhood", district_names)
 
 yoga, pilates, barre = load_data()
